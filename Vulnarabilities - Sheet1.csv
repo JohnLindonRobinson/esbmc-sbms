@@ -1,0 +1,125 @@
+ID,Title,Relationships,Test cases
+SWC-136,Unencrypted Private Data On-Chain,CWE-767: Access to Critical Private Variable via Public Method,"odd_even.sol
+odd_even_fixed.sol"
+SWC-135,Code With No Effects,CWE-1164: Irrelevant Code,"deposit_box.sol
+deposit_box_fixed.sol
+wallet.sol
+wallet_fixed.sol"
+SWC-134,Message call with hardcoded gas amount,CWE-655: Improper Initialization,hardcoded_gas_limits.sol
+SWC-133,Hash Collisions With Multiple Variable Length Arguments,CWE-294: Authentication Bypass by Capture-replay,"access_control.sol
+access_control_fixed_1.sol
+access_control_fixed_2.sol"
+SWC-132,Unexpected Ether balance,CWE-667: Improper Locking,Lockdrop.sol
+SWC-131,Presence of unused variables,CWE-1164: Irrelevant Code,"unused_state_variables.sol
+unused_state_variables_fixed.sol
+unused_variables.sol
+unused_variables_fixed.sol"
+SWC-130,Right-To-Left-Override control character (U+202E),CWE-451: User Interface (UI) Misrepresentation of Critical Information,guess_the_number.sol
+SWC-129,Typographical Error,CWE-480: Use of Incorrect Operator,"typo_one_command.sol
+typo_safe_math.sol
+typo_simple.sol"
+SWC-128,DoS With Block Gas Limit,CWE-400: Uncontrolled Resource Consumption,"dos_address.sol
+dos_number.sol
+dos_simple.sol"
+SWC-127,Arbitrary Jump with Function Type Variable,CWE-695: Use of Low-Level Functionality,FunctionTypes.sol
+SWC-126,Insufficient Gas Griefing,CWE-691: Insufficient Control Flow Management,"relayer.sol
+relayer_fixed.sol"
+SWC-125,Incorrect Inheritance Order,CWE-696: Incorrect Behavior Order,MDTCrowdsale.sol
+SWC-124,Write to Arbitrary Storage Location,CWE-123: Write-what-where Condition,"arbitrary_location_write_simple.sol
+arbitrary_location_write_simple_fixed.sol
+mapping_write.sol"
+SWC-123,Requirement Violation,CWE-573: Improper Following of Specification by Caller,"requirement_simple.sol
+requirement_simple_fixed.sol"
+SWC-122,Lack of Proper Signature Verification,CWE-345: Insufficient Verification of Data Authenticity,
+SWC-121,Missing Protection against Signature Replay Attacks,CWE-347: Improper Verification of Cryptographic Signature,
+SWC-120,Weak Sources of Randomness from Chain Attributes,CWE-330: Use of Insufficiently Random Values,"guess_the_random_number.sol
+guess_the_random_number_fixed.sol
+old_blockhash.sol
+old_blockhash_fixed.sol
+random_number_generator.sol"
+SWC-119,Shadowing State Variables,CWE-710: Improper Adherence to Coding Standards,"ShadowingInFunctions.sol
+TokenSale.sol
+TokenSale_fixed.sol"
+SWC-118,Incorrect Constructor Name,CWE-665: Improper Initialization,"incorrect_constructor_name1.sol
+incorrect_constructor_name1_fixed.sol
+incorrect_constructor_name2.sol
+incorrect_constructor_name2_fixed.sol"
+SWC-117,Signature Malleability,CWE-347: Improper Verification of Cryptographic Signature,"transaction_malleablity.sol
+transaction_malleablity_fixed.sol"
+SWC-116,Block values as a proxy for time,CWE-829: Inclusion of Functionality from Untrusted Control Sphere,"time_lock.sol
+timed_crowdsale.sol"
+SWC-115,Authorization through tx.origin,CWE-477: Use of Obsolete Function,"mycontract.sol
+mycontract_fixed.sol"
+SWC-114,Transaction Order Dependence,CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'),"ERC20.sol
+eth_tx_order_dependence_minimal.sol"
+SWC-113,DoS with Failed Call,CWE-703: Improper Check or Handling of Exceptional Conditions,send_loop.sol
+SWC-112,Delegatecall to Untrusted Callee,CWE-829: Inclusion of Functionality from Untrusted Control Sphere,"proxy.sol
+proxy_fixed.sol
+proxy_pattern_false_positive.sol"
+SWC-111,Use of Deprecated Solidity Functions,CWE-477: Use of Obsolete Function,"deprecated_simple.sol
+deprecated_simple_fixed.sol"
+SWC-110,Assert Violation,CWE-670: Always-Incorrect Control Flow Implementation,"assert_constructor.sol
+assert_minimal.sol
+assert_multitx_1.sol
+assert_multitx_2.sol
+constructor_create.sol
+constructor_create_argument.sol
+constructor_create_modifiable.sol
+gas_model.sol
+gas_model_fixed.sol
+mapping_perfomance_2.sol
+mapping_performance_1.sol
+out-of-bounds-exception.sol
+return_memory.sol
+runtime_create_user_input.sol
+runtime_user_input_call.sol
+sha_of_sha_2_mappings.sol
+sha_of_sha_collision.sol
+sha_of_sha_concrete.sol
+token-with-backdoor.sol
+two_mapppings.sol
+simpledschief.sol"
+SWC-109,Uninitialized Storage Pointer,CWE-824: Access of Uninitialized Pointer,"crypto_roulette.sol
+crypto_roulette_fixed.sol"
+SWC-108,State Variable Default Visibility,CWE-710: Improper Adherence to Coding Standards,storage.sol
+SWC-107,Reentrancy,CWE-841: Improper Enforcement of Behavioral Workflow,"modifier_reentrancy.sol
+modifier_reentrancy_fixed.sol
+simple_dao.sol
+simple_dao_fixed.sol"
+SWC-106,Unprotected SELFDESTRUCT Instruction,CWE-284: Improper Access Control,"WalletLibrary.sol
+simple_suicide.sol
+suicide_multitx_feasible.sol
+suicide_multitx_infeasible.sol"
+SWC-105,Unprotected Ether Withdrawal,CWE-284: Improper Access Control,"tokensalechallenge.sol
+rubixi.sol
+multiowned_not_vulnerable.sol
+multiowned_vulnerable.sol
+simple_ether_drain.sol
+wallet_01_ok.sol
+wallet_02_refund_nosub.sol
+wallet_03_wrong_constructor.sol
+wallet_04_confused_sign.sol"
+SWC-104,Unchecked Call Return Value,CWE-252: Unchecked Return Value,unchecked_return_value.sol
+SWC-103,Floating Pragma,CWE-664: Improper Control of a Resource Through its Lifetime,"floating_pragma.sol
+floating_pragma_fixed.sol
+no_pragma.sol
+semver_floating_pragma.sol
+semver_floating_pragma_fixed.sol"
+SWC-102,Outdated Compiler Version,CWE-937: Using Components with Known Vulnerabilities,version_0_4_13.sol
+SWC-101,Integer Overflow and Underflow,CWE-682: Incorrect Calculation,"tokensalechallenge.sol
+integer_overflow_mapping_sym_1.sol
+integer_overflow_mapping_sym_1_fixed.sol
+integer_overflow_minimal.sol
+integer_overflow_minimal_fixed.sol
+integer_overflow_mul.sol
+integer_overflow_mul_fixed.sol
+integer_overflow_multitx_multifunc_feasible.sol
+integer_overflow_multitx_multifunc_feasible_fixed.sol
+integer_overflow_multitx_onefunc_feasible.sol
+integer_overflow_multitx_onefunc_feasible_fixed.sol
+integer_overflow_multitx_onefunc_infeasible.sol
+overflow_simple_add.sol
+overflow_simple_add_fixed.sol
+BECToken.sol"
+SWC-100,Function Default Visibility,CWE-710: Improper Adherence to Coding Standards,"visibility_not_set.sol
+visibility_not_set_fixed.sol"
