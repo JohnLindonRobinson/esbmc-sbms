@@ -1,0 +1,20 @@
+{
+    "Title": "Block values as a proxy for time",
+    "Link": "https://swcregistry.io/docs/SWC-116",
+    "Description": "The block number is a proxy for time, but it is not a reliable one. The block time is not constant, and can be manipulated by miners. The block number can also be manipulated by miners,",
+    "Files": [
+        {
+            "Path": "src/SWC-116/block_values_as_a_proxy_for_time.sol",
+            "Functions": [
+                {
+                    "Name": "lockEth",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "withdraw",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

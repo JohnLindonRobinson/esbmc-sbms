@@ -1,0 +1,25 @@
+{
+    "Title": "Outdated Compiler Version",
+    "Link": "https://swcregistry.io/docs/SWC-102",
+    "Description": "The compiler version used to compile this contract is outdated.",
+    "Files": [
+        {
+            "Path": "src/SWC-102/outdated_compiler_version.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Fail"
+                }
+            ]
+        },
+        {
+            "Path": "src/SWC-102/up_to_date_compiler_version.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Pass"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Unprotected Ether Withdrawal",
+    "Link": "https://swcregistry.io/docs/SWC-105",
+    "Description": "The contract allows anyone to withdraw ether from the contract.",
+    "Files": [
+        {
+            "Path": "src/SWC-105/UnprotectedEtherWithdrawal.sol",
+            "Functions": [
+                {
+                    "Name": "buy",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "sell",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "foo",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "isComplete",
+                    "Expected": "Pass"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "Title": "Weak Sources of Randomness from Chain Attributes",
+    "Link": "https://swcregistry.io/docs/SWC-120",
+    "Description": "The use of block.timestamp, block.number, block.difficulty, and block.gaslimit as sources of randomness can lead to predictable values. This can be exploited by an attacker to predict future values.",
+    "Files": [
+        {
+            "Path": "src/SWC-120/weak_sources_of_randomness_from_chain_attributes.sol",
+            "Functions": {
+                [
+                    {
+                        "Name": "generateRandomNumber_Timestamp",
+                        "Expected": "Fail"
+                    },
+                    {
+                        "Name": "generateRandomNumber_Difficulty",
+                        "Expected": "Fail"
+                    },
+                    {
+                        "Name": "generateRandomNumber_prevrandao",
+                        "Expected": "Pass"
+                    },
+                    {
+                        "Name": "generateRandomNumber",
+                        "Expected": "Fail"
+                    },
+                    {
+                        "Name": "takeBet1Eth",
+                        "Expected": "Fail"
+                    }
+                ]
+            }
+        }
+    ]
+}

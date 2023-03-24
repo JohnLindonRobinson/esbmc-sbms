@@ -1,0 +1,20 @@
+{
+    "Title": "DoS with Failed Call",
+    "Link": "https://swcregistry.io/docs/SWC-113",
+    "Description": "A contract can be DoSed by calling a function that fails to execute. This is because the gas is not refunded in this case.",
+    "Files": [
+        {
+            "Path": "src/SWC-113/DoS_with_failed_call.sol",
+            "Functions": [
+                {
+                    "Name": "constructor",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "failLoop",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

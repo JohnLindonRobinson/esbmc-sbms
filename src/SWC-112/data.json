@@ -1,0 +1,16 @@
+{
+    "Title": "Delegatecall to Untrusted Callee",
+    "Link": "https://swcregistry.io/docs/SWC-112",
+    "Description": "The contract calls a function of an untrusted contract using delegatecall. The called function can modify the state of the calling contract.",
+    "Files": [
+        {
+            "Path": "src/swc-112/delegatecall_to_untrusted_callee.sol",
+            "Functions": [
+                {
+                    "Name": "delegatecallToUntrustedCallee",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

@@ -2,7 +2,9 @@
 pragma solidity ^0.8.0;
 
 contract UninitializedStoragePointer {
-    //TODO check if this is a bug in solc
+    // Note: As of compiler version 0.5.0 and higher this issue has been
+    // systematically resolved as contracts with uninitialised storage
+    // pointers do no longer compile.
     uint[] public a;
     uint[] public b;
 

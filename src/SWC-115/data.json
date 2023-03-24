@@ -1,0 +1,20 @@
+{
+    "Title": "Authorization through tx.origin",
+    "Link": "https://swcregistry.io/docs/SWC-115",
+    "Description": "The tx.origin variable is used to check the sender of a transaction. This variable is deprecated and should not be used.",
+    "Files": [
+        {
+            "Path": "src/SWC-115/authorization_through_tx_origin.sol",
+            "Functions": [
+                {
+                    "Name": "constructor",
+                    "Expected": "Pass",
+                },
+                {
+                    "Name": "sendTo",
+                    "Expected": "Fail",
+                }
+            ]
+        }
+    ]
+}

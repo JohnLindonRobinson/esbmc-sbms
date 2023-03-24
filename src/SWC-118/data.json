@@ -1,0 +1,24 @@
+{
+    "Title": "Incorrect Constructor Name",
+    "Link": "https://swcregistry.io/docs/SWC-118",
+    "Description": "The constructor name is not the same as the contract name with appropriate versions or is not named constructor.",
+    "Files": [
+        {
+            "Path": "src/SWC-118/incorrect_constructor_name.sol",
+            "Functions": [
+                {
+                    "Name": "IncorrectConstructorName",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "incorrectConstructorName",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "constructor",
+                    "Expected": "Pass"
+                }
+            ]
+        }
+    ]
+}

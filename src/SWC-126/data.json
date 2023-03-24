@@ -1,0 +1,16 @@
+{
+    "Title": "Insufficient Gas Griefing",
+    "Description": "The contract does not check the gas limit before performing a call. This can be used to grief the contract by calling it with a low gas limit.",
+    "Link": "https://swcregistry.io/docs/SWC-126",
+    "Files": [
+        {
+            "Path": "src/SWC-126/insufficient_gas_griefing.sol",
+            "Functions": [
+                {
+                    "Name": "callAnotherContract",
+                    "Expected": "Fail",
+                }
+            ]
+        }
+    ]
+}

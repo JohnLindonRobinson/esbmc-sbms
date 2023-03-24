@@ -1,0 +1,32 @@
+{
+    "Title": "Function Default Visibility",
+    "Link": "https://swcregistry.io/docs/SWC-100",
+    "Description": "The default visibility of functions is public. This can lead to unexpected behavior if the contract is inherited and a function with the same name is defined in the child contract. The child contract will not override the parent contract function, but instead create a new function with the same name. This can lead to unexpected behavior.",
+    "Files": [
+        {
+            "Path": "src/SWC-100/function_default_visibility.sol",
+            "Functions": [
+                {
+                    "Name": "publicFunction",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "privateFunction",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "internalFunction",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "externalFunction",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "defaultVisibility",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

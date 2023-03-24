@@ -1,0 +1,24 @@
+{
+    "Title": "Reentrancy",
+    "Link": "https://swcregistry.io/docs/SWC-107",
+    "Description": "A contract is vulnerable to reentrancy if it calls an external contract that can call back into the contract before the original call returns. This can be exploited to steal ether or tokens from the contract.",
+    "Files": [
+        {
+            "Path": "src/SWC-107/Reentrancy.sol",
+            "Functions": [
+                {
+                    "Name": "donate",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "withdraw",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "getBalance",
+                    "Expected": "Pass"
+                }
+            ]
+        }
+    ]
+}

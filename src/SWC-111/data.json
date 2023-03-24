@@ -1,0 +1,40 @@
+{
+    "Title": "Use of Deprecated Solidity Functions",
+    "Link": "https://swcregistry.io/docs/SWC-111",
+    "Description": "The following functions are deprecated in Solidity 0.8.0: suicide, callcode, block.blockhash, sha3, msg.gas, throw, constant, var.",
+    "Files": [
+        {
+            "Path": "src/SWC-111/use_of_deprecated_solidity_functions.sol",
+            "Functions": [
+                {
+                    "Name": "suicideContract",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "callcode",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "getBlockHash",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "hash",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "getGas",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "useThrow",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "set_variables".
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

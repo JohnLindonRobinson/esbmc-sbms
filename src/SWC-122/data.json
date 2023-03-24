@@ -1,0 +1,24 @@
+{
+    "Title": "Lack of Proper Signature Verification",
+    "Link": "https://swcregistry.io/docs/SWC-122",
+    "Description": "The contract does not verify the signature of the message sender. This can lead to a replay attack, where an attacker can use a message signed by the victim to impersonate the victim.",
+    "Files": [
+        {
+            "Path": "src/SWC-122/lack_of_proper_signature_verification.sol",
+            "Functions": [
+                {
+                    "Name": "processMessage",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "getMessageHash",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "recoverSigner",
+                    "Expected": "Pass"
+                }
+            ]
+        }
+    ]
+}

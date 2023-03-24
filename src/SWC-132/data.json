@@ -1,0 +1,20 @@
+{
+    "Title": "Unexpected Ether Balance",
+    "Link": "https://swcregistry.io/docs/SWC-132",
+    "Description": "The contract has an unexpected ether balance. This can be caused by a missing return statement in a function, or by a missing payable modifier on a function that should accept ether.",
+    "Files": [
+        {
+            "Path": "src/SWC-132/unexpected_ether_balance.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "g",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

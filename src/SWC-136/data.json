@@ -1,9 +1,20 @@
 {
     "Title": "Unencrypted Private Data On-Chain",
     "Link": "https://swcregistry.io/docs/SWC-136",
+    "Description": "Private variables are not encrypted on-chain. This means that anyone with access to the blockchain can read the data stored in private variables. This can lead to a loss of funds or other sensitive information.",
     "Files": [
         {
+            "Path": "src/SWC-136/readable_private_variables.sol",
+            "Functions": [
+                {
+                    "Name": "setPrivateVariable",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "getPrivateVariable",
+                    "Expected": "Fail"
+                }
+            ]
         }
     ]
-
 }

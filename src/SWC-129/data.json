@@ -1,0 +1,16 @@
+{
+    "Name": "Typographical Error",
+    "Link": "https://swcregistry.io/docs/SWC-129",
+    "Description": "Specifically an instance of writing += as =+ in a Solidity smart contract. This is a common error that can lead to unexpected behavior.",
+    "Files": [
+        {
+            "Path": "src/SWC-129/typographical_error.sol",
+            "Functions": [
+                {
+                    "Name": "incrimentVulnerable",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

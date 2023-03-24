@@ -1,0 +1,15 @@
+{
+    "Title": "Unprotected SELFDESTRUCT Instruction",
+    "Link": "https://swcregistry.io/docs/SWC-106",
+    "Description": "A contract contains an unprotected SELFDESTRUCT instruction. This instruction allows the contract to destroy itself and send its funds to an arbitrary address. This can be used to remove the contract from the blockchain and to prevent further interactions with it. However, if the contract is not protected by a check, anyone can destroy the contract and withdraw its funds.",
+    "Files": [
+        {
+            "Path": "contracts/UnprotectedSelfdestructInstruction.sol",
+            "Functions": {
+                "Name": "destroyAnyone",
+                "Expected": "Fail"
+            }
+        }
+    ]
+
+}

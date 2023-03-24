@@ -1,0 +1,16 @@
+{
+    "Title": "Missing Protection against Signature Replay Attacks",
+    "Link": "https://swcregistry.io/docs/SWC-121",
+    "Description": "Signature replay attacks are possible when a contract does not include a nonce or timestamp in the signed message. This can be exploited by an attacker to replay a signed message to a contract multiple times. This can be used to perform a variety of attacks, such as double spending, or replaying a transaction to a contract that has a side effect, such as transferring funds.",
+    "Files": [
+        {
+            "Path": "src/SWC-121/missing_protection_against_signature_replay_attacks.sol",
+            "Functions": [
+                {
+                    "Name": "processMessage",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ],
+}

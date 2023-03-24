@@ -1,0 +1,16 @@
+{
+    "Title": "Uninitialized Storage Pointer",
+    "Link": "https://swcregistry.io/docs/SWC-109",
+    "Description": "The Solidity compiler does not initialize storage pointers. This can lead to unexpected behavior when the pointer is used before it is initialized. The compiler will not warn about this behavior.",
+    "Files": [
+        {
+            "Path": "src/SWC-109/unitialized_storage_pointer.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Integer Overflow and Underflow",
+    "Link": "https://swcregistry.io/docs/SWC-101",
+    "Description": "Integer overflow and underflow are common vulnerabilities that can lead to unexpected behavior in smart contracts. Integer overflow occurs when an arithmetic operation results in a number that is larger than the maximum value for that integer type. Integer underflow occurs when an arithmetic operation results in a number that is smaller than the minimum value for that integer type. Integer overflow and underflow can lead to unexpected behavior in smart contracts, including the ability to bypass access controls, transfer ownership of contracts, and steal funds. Integer overflow and underflow can be prevented by using SafeMath or similar libraries.",
+    "Files": [
+        {
+            "Path": "src/SWC-101/integer_overflow_underflow.sol",
+            "Functions": [
+                {
+                    "Name": "incriment",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "decrement",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "instanceOfIntegerOverflow",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "instanceOfIntegerUnderflow",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

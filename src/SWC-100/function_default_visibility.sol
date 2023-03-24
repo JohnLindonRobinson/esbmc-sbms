@@ -7,22 +7,18 @@ contract FunctionDefaultVisibility {
     // intended to be public.
 
     function publicFunction() public {
-        emit LogFunctionCall("publicFunction");
     }
 
     function privateFunction() private {
-        emit LogFunctionCall("privateFunction");
     }
 
     function internalFunction() internal {
-        emit LogFunctionCall("internalFunction");
     }
 
     function externalFunction() external {
-        emit LogFunctionCall("externalFunction");
     }
 
     function defaultVisibility() {
-        emit LogFunctionCall("defaultVisibility");
+        // This function is public by default.
     }
 }

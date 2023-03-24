@@ -2,5 +2,5 @@
 pragma solidity 0.4.13;
 
 contract OutdatedCompilerVersion {
-    uint public a = 1;
+    function f() public {}
 }

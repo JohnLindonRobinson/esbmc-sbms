@@ -1,0 +1,24 @@
+{
+    "Title": "Message call with hardcoded gas amount",
+    "Link": "https://swcregistry.io/docs/SWC-134",
+    "Description": "The gas amount passed to a message call is not checked. This can lead to a denial of service attack, where the called contract consumes all gas available to the caller. This can be mitigated by checking the gas amount passed to the message call, and only allowing a certain amount of gas to be passed.",
+    "Files": [
+        {
+            "Path": "src/SWC-134/message_call_with_hardcoded_gas_amount.sol",
+            "Functions": [
+                {
+                    "Name": "call",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "call2",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "call3",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

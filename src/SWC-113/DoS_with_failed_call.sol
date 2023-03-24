@@ -3,11 +3,12 @@ pragma solidity ^0.8.0;
 
 contract DoSWithFailedCall {
 
-    address[] private _addresses;
+    address payable[] private _addresses;
     mapping (address => uint) private _balances;
 
-    hash address1 = 0x1234567890123456789012345678901234567890;
-    hash address2 = 0x1234567890123456789012345678901234567891;
+    address payable address1 = payable(address(0x1));
+    address payable address2 = payable(address(0x2));
+
 
     constructor(){
         _addresses.push(address1);

@@ -1,0 +1,16 @@
+{
+    "Title": "Hash Collisions With Multiple Variable Length Arguments",
+    "Link": "https://swcregistry.io/docs/SWC-133",
+    "Description": "The Solidity compiler uses the Keccak-256 hash function to hash the function signature and the types of the arguments to a function. If the function signature and the types of the arguments are the same, the compiler will not detect a collision. This can be exploited to call a function with a different signature than the one intended. This can be used to bypass access control mechanisms, or to call a function with a different meaning than the one intended.",
+    "Files": [
+        {
+            "Path": "src/SWC-133/hash_collisions_with_multiple_variable_length_arguments.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

@@ -1,10 +1,10 @@
-/*
+/* IMPORTANT TO NOTE THIS WAS NOT WRITTEN BY JLR
  * @author: Kaden Zipfel
  */
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.0;
 
-contract TimeLock {
+contract BlockValuesAsAProxyForTime {
     struct User {
         uint amount; // amount locked (in eth)
         uint unlockBlock; // minimum block to unlock eth
@@ -26,7 +26,7 @@ contract TimeLock {
 
         uint amount = users[msg.sender].amount;
         users[msg.sender].amount = 0;
-        (bool success, ) = msg.sender.call.value(amount)("");
+        (bool success, ) = msg.sender.call{value: amount}("");
         require(success, 'transfer failed');
     }
 }

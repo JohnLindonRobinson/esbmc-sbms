@@ -1,0 +1,16 @@
+{
+    "Title": "State Variable Default Visibility",   
+    "Link": "https://swcregistry.io/docs/SWC-108",
+    "Description": "State variables are public by default- this can lead to the contract's data being publicly accessible. It is recommended to explicitly set the visibility of state variables.",
+    "Files": [
+        {
+            "Path": "src/SWC-108/state_variable_default_visibility.sol",
+            "Functions": [
+                {
+                    "Name": "f",
+                    "Expected": "Fail"
+                }
+            ] 
+        }
+    ]
+}

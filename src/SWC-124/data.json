@@ -1,0 +1,26 @@
+{
+    "Title": "Write to Arbitrary Storage Location",
+    "Link": "https://swcregistry.io/docs/SWC-124",
+    "Description": "The contract allows the owner to write to arbitrary storage locations. This can be used to change the contract's state in unexpected ways, or to steal funds from the contract.",
+    "Files": [{
+        "Path": "src/SWC-124/write_to_arbitrary_storage_location.sol",
+        "Functions": [
+            {
+                "Name": "pushToArray",
+                "Expected": "Fail"
+            },
+            {
+                "Name": "popFromArray",
+                "Expected": "Fail"
+            },
+            {
+                "Name": "pushToArraySafe",
+                "Expected": "Pass"
+            },
+            {
+                "Name": "popFromArraySafe",
+                "Expected": "Pass"
+            }
+        ]
+    }]
+}

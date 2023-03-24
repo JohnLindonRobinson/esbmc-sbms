@@ -1,0 +1,20 @@
+{
+    "Title": "Code With No Effects",
+    "Link": "https://swcregistry.io/docs/SWC-135",
+    "Description": "A function that does not have any effect on the state of the contract or the blockchain. This can be due to a bug or a function that is not yet implemented.",
+    "Files": [
+        {
+            "Path": "src/SWC-135/irrelevant_code.sol",
+            "Functions": [
+                {
+                    "Name": "containgingIrrelevantCode",
+                    "Expected": "Fail"
+                },
+                {
+                    "Name": "emptyFunction",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

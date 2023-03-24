@@ -1,0 +1,24 @@
+{
+    "Title": "Arbitrary Jump with Function Type Variable",
+    "Link": "https://swcregistry.io/docs/SWC-127",
+    "Description": "The Solidity compiler does not check that the function type variable is not a delegatecall. This can lead to arbitrary jumps in the contract's code. This can be used to bypass access control mechanisms, steal funds, and more.",
+    "Files": [
+        {
+            "Path": "src/SWC-127/arbitrary_jump_with_function_type_variable.sol",
+            "Functions": [
+                {
+                    "Name": "foo",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "bar",
+                    "Expected": "Pass"
+                },
+                {
+                    "Name": "main",
+                    "Expected": "Fail"
+                }
+            ]
+        }
+    ]
+}

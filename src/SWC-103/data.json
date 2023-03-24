@@ -1,0 +1,11 @@
+{
+    "Title": "Floating Pragma",
+    "Link": "https://swcregistry.io/docs/SWC-103",
+    "Description": "A pragma that floats to the top of the file without specifying exact compiler version. This can lead the compiler to use a different version of the pragma than intended. Thus potentially taking advantage of a bug in the specific version compiler.",
+    "Files": [
+        {
+            "Path": "src/SWC-103/floating_pragma.sol",
+            "Functions": []
+        }
+    ]
+}

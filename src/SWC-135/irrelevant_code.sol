@@ -35,8 +35,4 @@ contract IrrelevantCode {
 
     function emptyFunction() public {
     }
-
-    function sendWithIrellevant () public payable {
-        msg.sender.call.value{address(this).balance);
-    }
 }
